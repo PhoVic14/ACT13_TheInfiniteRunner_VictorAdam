@@ -18,7 +18,6 @@ public class GroundSpawner : MonoBehaviour
             temp.GetComponent<GroundTile>().SpawnCoins();
         }
     }
-    // Start is called before the first frame update
     public void Start()
     {
        for (int i = 0; i < 10; i++)

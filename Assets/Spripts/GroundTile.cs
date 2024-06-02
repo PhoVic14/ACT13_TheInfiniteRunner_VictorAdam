@@ -11,7 +11,7 @@ public class GroundTile : MonoBehaviour
     [SerializeField] GameObject movingObstaclePrefab;
     [SerializeField] GameObject verticalMovingObstaclePrefab;
     [SerializeField] GameObject forwardBackwardMovingObstaclePrefab;
-    [SerializeField] GameObject rampPrefab; // Ajoutez cette ligne
+    [SerializeField] GameObject rampPrefab;
     [SerializeField] float tallObstacleChance = 0.2f;
     [SerializeField] float movingObstacleChance = 0.1f;
     [SerializeField] float verticalMovingObstacleChance = 0.1f;
@@ -58,7 +58,6 @@ public class GroundTile : MonoBehaviour
 
         Vector3 spawnPosition = spawnPoint.position;
 
-        // Ajouter un décalage à la position Y pour lever l'obstacle
         if (obstacleToSpawn == tallObstaclePrefab)
         {
             spawnPosition.y += 1f;

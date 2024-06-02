@@ -12,13 +12,11 @@ using UnityEngine.UI;
         public Text inputText;
         public Text loadedName;
 
-        // Start is called before the first frame update
         void Start()
         {
 
         }
 
-        // Update is called once per frame
         void Update()
         {
             nameOfPlayer = PlayerPrefs.GetString("name", "none");
